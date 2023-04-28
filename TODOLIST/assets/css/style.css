@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#main {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 23px 30px 30px;
+    background-color: #1E272E;
+}
+
+#content {
+    margin: 27px 0;
+    
+}
+
+#header h1 {
+    text-align: center;
+    color: #ddd;
+    text-shadow: 3px 3px 10px rgb(126, 118, 118) ;
+}
+#header .form-task {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .form-task input[type=text] {
+    width: 78%;
+    line-height: 40px;
+    font-size: 16px;
+    background: #1E272E;
+    border: none;
+    border-bottom: 1px solid #FF6F6F;
+    color: #fff;
+}
+
+#header .form-task input::placeholder{
+    color: #FF6F6F;
+}
+#header .form-task input[type=submit] {
+    width: 20%;
+    background: #FF2B2B;
+    color: #fff;
+    border: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+ul li {
+    line-height: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #525252;
+}
+
+ul li .task-content {
+    flex-basis: 390px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.task-item[isCompleted='true'] p {
+    color: #A4A4A4;
+    text-decoration: line-through;
+}
+ul li .btn-edit, .btn-delete {
+    flex-basis:24px;
+    background: #1E272E;
+    border: none;
+    color: #A4A4A4;
+    font-size: 17px;
+}
+#header .form-task input[type=submit],
+ul li .btn-edit, .btn-delete:hover{
+    cursor: pointer;
+}
+
+
+#footer .task-completed {
+    color: #828282;
+    font-style: italic;
+    font-size: 14px;
+}
+
